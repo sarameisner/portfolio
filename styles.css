@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ebe1d9;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  border: 0.5px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.menu_container #menuContainer {
+  display: none;
+}
+
+/* menu links */
+.menu_container a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* burger menu */
+.menu_container a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu_container a:hover {
+  color: #5d7b84;
+  cursor: pointer;
+}
+
+.name {
+  margin-right: auto;
+}
+
+.menu_toggle {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.title {
+  font-size: 4rem;
+  position: relative;
+  top: 0;
+  left: -35px;
+}
+
+.indexbillede {
+  position: relative;
+  top: 20px;
+  left: 333px;
+}
