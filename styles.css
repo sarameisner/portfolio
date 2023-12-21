@@ -18,6 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 }
 
 .header_content {
@@ -34,8 +35,12 @@ header {
   position: relative;
   top: 0;
   left: -35px;
+  color: black;
 }
 
+.header_content a {
+  text-decoration: none;
+}
 /* FORSIDE */
 .indexbillede {
   position: relative;
@@ -97,6 +102,7 @@ header {
   position: relative;
   z-index: -1;
 }
+
 /* MENU */
 .dropbtn {
   background-color: #04aa6d00;
@@ -154,10 +160,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: baseline;
+  gap: 10px;
 }
 
 .overskrift p {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+.p1 {
+  font-family: aileron, sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .tekstbox_container {
@@ -167,11 +179,11 @@ footer {
 }
 .textbox {
   display: block;
-  max-width: 90%;
+  max-width: 80%;
   position: relative;
   z-index: -1;
-  top: -22px;
-  left: 830px;
+  top: 7px;
+  left: 900px;
 }
 .N03_site {
   position: relative;
@@ -183,10 +195,16 @@ footer {
 }
 .N03_slides {
   position: relative;
-  top: 20px;
+  top: 50px;
   right: 650px;
 }
 
+/* KNAP TIL LINKS */
+.klikherknap {
+  position: relative;
+  top: -592px;
+  left: 20px;
+}
 /* KARRUSEL START */
 .slideshow-container {
   max-width: 95%;
@@ -213,7 +231,7 @@ footer {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: #5d7b84;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -233,7 +251,16 @@ footer {
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #e8d9c5;
 }
 
 /* KARRUSEL SLUT */
+
+/* N.01 */
+.præsentationskort {
+  position: relative;
+  top: 0;
+  left: 50px;
+  max-width: 70%;
+  height: auto;
+}
