@@ -6,9 +6,8 @@
 /* BODY */
 body {
   background-color: #ebe1d9;
-  margin: 0;
   font-family: aileron, sans-serif;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 /* HEADER */
@@ -29,6 +28,9 @@ header {
   margin-right: 40px;
   margin-left: 40px;
 }
+.header_content a {
+  text-decoration: none;
+}
 /* TITEL I HEADER */
 .title {
   font-size: 4rem;
@@ -38,27 +40,85 @@ header {
   color: black;
 }
 
-.header_content a {
-  text-decoration: none;
-}
 /* FORSIDE */
 .indexbillede {
+  max-width: 30%;
   position: relative;
-  top: 20px;
-  left: 333px;
+  top: -132px;
+  left: 133px;
+  z-index: 1000;
+}
+
+.indexbillede:hover {
+  transform: scale(1.1);
+}
+
+.indexbillede2 {
+  position: relative;
+  top: -190px;
+  left: -620px;
+  z-index: 1000;
+  max-width: 95%;
+}
+.indexbillede3 {
+  position: relative;
+  top: -146px;
+  left: 503px;
+  z-index: 1000;
+}
+.overskrift_sara {
+  font-family: "blenny", sans-serif;
+  font-size: 3.5rem;
+  font-style: normal;
+  color: #748f8c;
+  position: relative;
+  top: -130px;
+  left: -14px;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.overskrift_meisner {
+  font-family: aileron, sans-serif;
+  font-size: 3.5rem;
+  color: black;
+  z-index: 1;
+  position: relative;
+  top: -158px;
+  left: -53px;
+  font-weight: lighter;
+}
+
+.index_overskrift {
+  position: relative;
+  top: 400px;
+  left: 320px;
+  z-index: 1;
 }
 /* PROJECTS SIDE */
 .projectsbillede {
   position: relative;
   top: 20px;
-  left: 266px;
+  left: 510px;
   z-index: 1;
 }
 .bogstav {
   font-family: "blenny", sans-serif;
   font-size: x-large;
   font-style: normal;
-  color: #5d7b84;
+  color: #748f8c;
 }
 .tal {
   font-family: aileron, sans-serif;
@@ -92,6 +152,11 @@ header {
   text-align: center;
   padding: 40%;
 }
+
+.projects_links a:hover {
+  transform: scale(1.1);
+}
+
 .projects_links a p {
   font-size: 2rem;
 }
@@ -123,7 +188,7 @@ header {
   background-color: #e4cda7;
   min-width: 110px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 99;
 }
 
 .dropdown-content a {
@@ -145,17 +210,7 @@ header {
   background-color: #3e8e4100;
 }
 
-/* FOOTER */
-footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin: 0;
-  padding: 15px;
-  position: sticky;
-}
-
-/* N03 */
+/* GENERAL CSS */
 .overskrift {
   display: flex;
   justify-content: center;
@@ -171,7 +226,6 @@ footer {
   font-weight: 100;
   font-style: normal;
 }
-
 .tekstbox_container {
   position: relative;
   text-align: center;
@@ -179,32 +233,26 @@ footer {
 }
 .textbox {
   display: block;
-  max-width: 80%;
+  max-width: 100%;
   position: relative;
   z-index: -1;
   top: 7px;
   left: 900px;
 }
-.N03_site {
-  position: relative;
-}
 
-.N03_samletindhold {
+.N0_samletindhold {
   display: flex;
   justify-content: space-between;
 }
-.N03_slides {
+.N0_slides {
   position: relative;
   top: 50px;
   right: 650px;
 }
-
-/* KNAP TIL LINKS */
-.klikherknap {
+.N0_site {
   position: relative;
-  top: -592px;
-  left: 20px;
 }
+
 /* KARRUSEL START */
 .slideshow-container {
   max-width: 95%;
@@ -231,7 +279,7 @@ footer {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #5d7b84;
+  color: #748f8c;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -256,11 +304,27 @@ footer {
 
 /* KARRUSEL SLUT */
 
-/* N.01 */
-.præsentationskort {
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 1px;
+
+  padding: 15px;
+  position: sticky;
+}
+
+/* -------------- PROJECT SIDERNE -------------- */
+/* N01 */
+.klikherknap {
   position: relative;
-  top: 0;
-  left: 50px;
-  max-width: 70%;
-  height: auto;
+  top: -610px;
+  left: 20px;
+}
+/* N02 */
+.klikherknap2 {
+  position: relative;
+  top: -610px;
+  left: 20px;
 }
