@@ -321,10 +321,36 @@ footer {
   position: relative;
   top: -610px;
   left: 20px;
+  animation: pulsate-fwd 0.5s ease-in-out infinite both;
+}
+/* dette gør at klik her knappen pulserer fremad */
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 /* N02 */
 .klikherknap2 {
   position: relative;
   top: -610px;
   left: 20px;
+  animation: pulsate-fwd 0.5s ease-in-out infinite both;
+}
+/* dette gør at klik her knappen pulserer fremad */
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
