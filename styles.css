@@ -112,7 +112,6 @@ header {
   position: relative;
   top: 20px;
   left: 510px;
-  z-index: 1;
 }
 .bogstav {
   font-family: "blenny", sans-serif;
@@ -132,7 +131,6 @@ header {
 .projectsbillede_container {
   position: relative;
   text-align: center;
-  z-index: 1;
 }
 .projects_links {
   display: flex;
@@ -166,6 +164,17 @@ header {
   max-width: 100%;
   position: relative;
   z-index: -1;
+}
+
+.overskrift_projects {
+  font-family: aileron, sans-serif;
+  font-size: 3.5rem;
+  color: black;
+  z-index: 1;
+  position: relative;
+  top: -158px;
+  left: -53px;
+  font-weight: lighter;
 }
 
 /* MENU */
