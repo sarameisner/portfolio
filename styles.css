@@ -41,6 +41,7 @@ header {
 }
 
 /* FORSIDE */
+/* PORTRÆT / MALERI */
 .indexbillede {
   max-width: 30%;
   position: relative;
@@ -49,10 +50,12 @@ header {
   z-index: 1000;
 }
 
+/* FÅR BILLEDET TIL AT BLIVE STØRRE NÅR MUSEN ER OVRE */
 .indexbillede:hover {
   transform: scale(1.1);
 }
 
+/* BILLEDET / MALERIET BAGERST */
 .indexbillede2 {
   position: relative;
   top: -190px;
@@ -60,12 +63,14 @@ header {
   z-index: 1000;
   max-width: 95%;
 }
+/* VEKTORGRAFIK BILLEDET */
 .indexbillede3 {
   position: relative;
   top: -146px;
   left: 503px;
   z-index: 1000;
 }
+/* NAVN INDE I VEKTORGRAFIK */
 .overskrift_sara {
   font-family: "blenny", sans-serif;
   font-size: 3.5rem;
@@ -76,7 +81,7 @@ header {
   left: -14px;
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
-
+/* DETTE FÅR "SARA" TIL AT KOMME IND FRA SIDEN */
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -113,6 +118,7 @@ header {
   top: 20px;
   left: 510px;
 }
+/* BOGSTAV OG TAL HAR FÅET HVER DERES CLASS SÅ DE KUNNE STYLES */
 .bogstav {
   font-family: "blenny", sans-serif;
   font-size: x-large;
@@ -125,6 +131,7 @@ header {
   color: black;
   text-decoration: underline;
 }
+
 .projects_site {
   position: relative;
 }
@@ -132,6 +139,7 @@ header {
   position: relative;
   text-align: center;
 }
+/* LINKS TIL PROJEKT SIDERNE */
 .projects_links {
   display: flex;
   position: absolute;
@@ -150,7 +158,7 @@ header {
   text-align: center;
   padding: 40%;
 }
-
+/* GØR AT LINKS BLIVER STØRRE NÅR MUSEN ER OVER */
 .projects_links a:hover {
   transform: scale(1.1);
 }
@@ -159,6 +167,7 @@ header {
   font-size: 2rem;
 }
 
+/* BILLEDE BAG LINKSENE */
 .projectsbillede {
   display: block;
   max-width: 100%;
@@ -199,7 +208,7 @@ header {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 99;
 }
-
+/* LINKSENE INDE I MENUEN */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -207,6 +216,7 @@ header {
   display: block;
 }
 
+/* GØR AT FARVEN ÆNDRER SIG NÅR MUSEN ER OVER */
 .dropdown-content a:hover {
   background-color: #ebe1d9;
 }
@@ -219,7 +229,8 @@ header {
   background-color: #3e8e4100;
 }
 
-/* GENERAL CSS */
+/* ---------------------- * GENERAL CSS * ---------------------- */
+/* OVERSKRIFT TIL PROJECT SIDERNE */
 .overskrift {
   display: flex;
   justify-content: center;
@@ -230,56 +241,51 @@ header {
 .overskrift p {
   font-size: 2rem;
 }
+
 .p1 {
   font-family: aileron, sans-serif;
   font-weight: 100;
   font-style: normal;
 }
-.tekstbox_container {
-  position: relative;
-  text-align: center;
-  z-index: 1;
-}
+
+/* TEKSTBOKS TIL FORKLARING OM PROJEKTERNE */
 .textbox {
-  display: block;
+  /* display: block;
   max-width: 100%;
   position: relative;
   z-index: -1;
   top: 7px;
-  left: 900px;
+  left: 900px; */
 }
 
 .N0_samletindhold {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 10px;
 }
-.N0_slides {
-  position: relative;
-  top: 50px;
-  right: 650px;
-}
+
+/* PLACERING AF KARRUSEL */
 .N0_site {
   position: relative;
 }
 
 /* KARRUSEL START */
 .slideshow-container {
-  max-width: 95%;
+  width: 75%;
   position: relative;
   overflow: hidden;
   margin: auto;
 }
-
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-
+/* BILLEDER I KARRUSEL */
 .slides img {
   width: 100%;
   height: auto;
 }
-
+/* PILENE I KARRUSEL */
 .prev,
 .next {
   cursor: pointer;
@@ -296,21 +302,22 @@ header {
   user-select: none;
 }
 
+/* TILBAGE KNAP */
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
 }
-
+/* NÆSTE KNAP */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
+/* EFFEKT PÅ KNAPPERNE */
 .prev:hover,
 .next:hover {
   background-color: #e8d9c5;
 }
-
 /* KARRUSEL SLUT */
 
 /* FOOTER */
@@ -319,31 +326,59 @@ footer {
   align-items: baseline;
   justify-content: space-between;
   margin: 1px;
-
   padding: 15px;
   position: sticky;
 }
 
 /* -------------- PROJECT SIDERNE -------------- */
 /* N01 */
-.klikherknap {
-  position: relative;
-  top: -610px;
-  left: 20px;
-  animation: pulsate-fwd 0.5s ease-in-out infinite both;
+
+.tekstindhold01 {
+  -webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-/* dette gør at klik her knappen pulserer fremad */
-@keyframes pulsate-fwd {
+@-webkit-keyframes tilt-in-top-1 {
   0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
+    -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
   }
 }
+@keyframes tilt-in-top-1 {
+  0% {
+    -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+.klikherknap {
+  background-color: #e4cda7;
+  color: black;
+  border: 2px solid #748f8c;
+  border-radius: 2px;
+  text-decoration: none;
+  padding: 14px 10px;
+  position: relative;
+  top: -40px;
+  left: 1200px;
+  transition-duration: 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.klikherknap:hover {
+  background-color: #04aa6d; /* Green */
+  color: white;
+}
+
 /* N02 */
 .klikherknap2 {
   position: relative;
