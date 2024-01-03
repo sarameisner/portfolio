@@ -57,8 +57,8 @@ header {
 .indexbillede {
   max-width: 30%;
   position: absolute;
-  top: 8%;
-  left: 42%;
+  top: 9%;
+  left: 43%;
   z-index: 1000;
 }
 
@@ -67,19 +67,19 @@ header {
   transform: scale(1.1);
 }
 
-/* BILLEDET / MALERIET BAGERST */
+/* VEKTORGRAFIK BILLEDET */
 .indexbillede2 {
   position: absolute;
   top: 18%;
-  left: 20%;
+  left: 15%;
   z-index: 1000;
   max-width: 95%;
 }
-/* VEKTORGRAFIK BILLEDET */
+/* BILLEDET / MALERIET BAGERST */
 .indexbillede3 {
   position: absolute;
-  top: 0px;
-  left: 40%;
+  top: 0;
+  left: 35%;
   z-index: 1000;
   padding-block: 1%;
 }
@@ -123,7 +123,7 @@ header {
 .index_overskrift {
   position: absolute;
   top: 393px;
-  left: 320px;
+  left: 260px;
   z-index: 1;
 }
 
