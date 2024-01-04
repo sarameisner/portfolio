@@ -333,14 +333,12 @@ footer {
   padding: 15px;
   margin-top: auto;
 }
-
 /* -------------- PROJECT SIDERNE -------------- */
 /* N01 */
-
 .tekstindhold01 {
   font-family: aileron, sans-serif;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
 .tekstindhold01 p {
@@ -364,6 +362,7 @@ h4 {
   flex-direction: column;
   align-items: center;
 }
+/* KNAP DER VIDERESENDER  */
 .klikherknap {
   text-align: center;
   font-weight: lighter;
@@ -398,7 +397,7 @@ h4 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content/Box */
+/* pop up indhold */
 .modal-content {
   background-color: #e8d9c5;
   margin: 15% auto;
@@ -409,10 +408,10 @@ h4 {
   padding-top: 15px;
 }
 .modal-content p {
-  margin-bottom: 20px; /* Tilføjer mellemrum under hvert afsnit */
+  margin-bottom: 20px; /* tilføjer mellemrum under hvert tekst afsnit */
 }
 
-/* The Close Button */
+/* kryds / lukke knappen*/
 .close {
   color: #748f8c;
   float: right;
@@ -437,7 +436,7 @@ h4 {
   padding: 10px 6px;
   transition-duration: 0.4s;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  margin-top: 20px;
+  margin-top: 19px;
   margin-right: 80px;
   font-size: 1rem;
   cursor: pointer;
@@ -446,4 +445,16 @@ h4 {
 #myBtn:hover {
   background-color: #e8d9c5;
   color: black;
+}
+
+.modal-content_video {
+  width: fit-content;
+  background-color: #e8d9c5;
+  margin: 15% auto;
+  padding: 20px;
+  border: 5px solid #748f8c;
+  line-height: 1.7rem;
+  padding-top: 15px;
+  justify-content: center;
+  display: flex;
 }

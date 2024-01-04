@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -47,7 +47,9 @@
                     <div class="slides">
                         <img src="webp/videosite.webp" alt="Billede 1">
                         <img src="webp/research04.webp" alt="Billede 2">
-                        <img src="webp/styletile04.webp" alt="Billede 3">
+                        <img src="webp/omkunsteren04.webp" alt="billede 3">
+                        <img src="webp/styletile04.webp" alt="Billede 4">
+
                     </div>
                     <!-- PIL KNAPPER -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -58,6 +60,38 @@
             <!-- KARUSSEL SLUT -->
             <div class="tekstbox_container">
 
+                <div class="tekstindhold01">
+                    <h4>DESIGN:</h4>
+                    <p>I dette tema lærte jeg om videoproduktion. undervisningen startede med præproduktion, så
+                        videoproduktion og til sidst
+                        postproduktion. jeg fik dybere forståelse af audition og blev introduceret til programmet
+                        premiere pro. Tech og
+                        story lab holdte oplæg, og hørte jeg om skolens ressourcer og deres kunnen. jeg fik
+                        ydermere indblik i det
+                        journalistiske interview.
+                    </p>
+                    <h4>FRONT END:</h4>
+                    <p>i kodning lærte jeg at lave et videotag, altså indsætte min video på en hjemmeside. ydermere blev
+                        jeg introduceret til
+                        netlify, git & github.</p>
+                </div>
+                <!-- KNAP SOM FØRER TIL OMTALTE HJEMMESIDE -->
+                <a class="klikherknap" href="https://sarameisner.dk/kea/05_indhold/videosite/index.html">UDFORSK</a>
+
+                <button id="myBtn">VIDEOEN</button>
+
+                <!-- POP UP VINDUE -->
+                <div id="myModal" class="modal">
+
+                    <!-- INDHOLDET I POP UP VINDUE -->
+                    <div class="modal-content_video">
+                        <span class="close">&times;</span>
+                        <video width="560" height="315"
+                            src="http://sarameisner.dk/kea/05_indhold/video/videotilvideosite.mp4" controls></video>
+
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -66,6 +100,7 @@
         <p>PORTFOLIO</p>
         <p>2023</p>
     </footer>
+    <script src="popup.js"></script>
     <script src="menu.js"></script>
     <script src="script.js"></script>
 </body>
