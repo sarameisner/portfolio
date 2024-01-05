@@ -20,6 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  max-width: 100dvw;
 }
 
 .header_content {
@@ -58,7 +59,6 @@ header {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -80,7 +80,7 @@ header {
   background-color: #ebe1d9;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover.dropdown-content {
   display: block;
 }
 
@@ -182,6 +182,10 @@ header {
   position: relative;
   top: 20px;
   left: 510px;
+  z-index: 1000;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* bogstav og tal har fået hver deres class så de kunne styles hver især */
 .bogstav {
@@ -196,23 +200,24 @@ header {
   color: black;
   text-decoration: underline;
 }
-
-.projects_site {
-  position: relative;
-}
 .projectsbillede_container {
-  position: relative;
-  text-align: center;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 10px;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /* links til de forskellige projekter */
 .projects_links {
   display: flex;
-  position: absolute;
-  top: 58%;
-  left: 53%;
-  transform: translate(-50%, -50%); /* centrere elementerne */
-  justify-content: space-evenly;
   flex-direction: column;
+  z-index: 2000;
+  margin-top: 135px;
+  margin-right: 60px;
+  gap: 10px;
 }
 .projects_links a {
   display: flex;
@@ -220,35 +225,16 @@ header {
   align-items: baseline;
   text-decoration: none;
   text-align: center;
-  padding: 40%;
 }
+.projects_links a p {
+  font-size: 2.5rem;
+}
+
 /* gør at linksene bliver større når musen er over */
 .projects_links a:hover {
   transform: scale(1.1);
 }
 
-.projects_links a p {
-  font-size: 2rem;
-}
-
-/* billede bag links */
-.projectsbillede {
-  display: block;
-  max-width: 100%;
-  position: relative;
-  z-index: -1;
-}
-
-.overskrift_projects {
-  font-family: aileron, sans-serif;
-  font-size: 3.5rem;
-  color: black;
-  z-index: 1;
-  position: relative;
-  top: -158px;
-  left: -53px;
-  font-weight: lighter;
-}
 /* PROJECTS SIDE SLUT */
 
 /* STYLING DER GÅR IGEN PÅ DE 5 FORSKELLIGE PROJEKT SIDER START */
@@ -468,6 +454,33 @@ footer {
 }
 /* FOOTER SLUT */
 
+details {
+  font-family: arial;
+}
+summary {
+  background: #dedede;
+  padding: 20px;
+  border-bottom: solid 1px #bbb;
+  transition: background 1s;
+  cursor: pointer;
+}
+summary:hover {
+  background: #bbb;
+}
+p {
+  padding: 0 20px;
+}
+details[open] summary {
+  background: #404040;
+  color: #fff;
+}
+/* TABLET SITE */
+/* når skærmen er max 1000px - dvs den er under 1000 */
+@media (max-width: 1000px) {
+  .projectsbillede {
+  }
+}
+
 /* MOBILESITE */
 @media only screen and (max-width: 800px) {
   * {
@@ -478,6 +491,7 @@ footer {
   body {
     overflow-x: hidden;
   }
+  /* HEADER START */
   .title {
     font-size: 2rem;
     padding-left: 80px;
@@ -485,7 +499,6 @@ footer {
   .name {
     font-size: small;
   }
-
   .dropbtn {
     font-size: small;
   }
@@ -494,6 +507,9 @@ footer {
     align-items: center;
     display: flex;
   }
+  /* HEADER SLUT */
+
+  /* FORSIDE START */
   .indexbillede2 {
     display: none;
   }
@@ -533,5 +549,57 @@ footer {
     font-size: 0.9rem;
     justify-content: center;
     gap: 5px;
+  }
+
+  /* MENU */
+  .dropdown-content a {
+    color: black;
+    padding: 4px 2px;
+
+    text-decoration: none;
+    display: block;
+    font-size: small;
+  }
+  /* PROJECTS SIDE START */
+  .projectsbillede {
+    display: none;
+  }
+  /* bogstav og tal har fået hver deres class så de kunne styles hver især */
+  .bogstav {
+    font-family: "blenny", sans-serif;
+    font-size: x-large;
+    font-style: normal;
+    color: #748f8c;
+  }
+  .tal {
+    font-family: aileron, sans-serif;
+    font-size: x-large;
+    color: black;
+    text-decoration: underline;
+  }
+
+  .projectsbillede_container {
+    text-align: center;
+  }
+  /* links til de forskellige projekter */
+  .projects_links {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  /* PROJECTS SIDE SLUT */
+
+  .N0_samletindhold {
+    display: flex;
+    flex-direction: column-reverse; /* ændrer rækkefølgen */
+  }
+
+  .N0_slides {
+    order: 2; /* flytter slideshowet under teksten */
+  }
+
+  .tekstbox_container {
+    order: 1; /* flytter teksten over slideshowet */
   }
 }
