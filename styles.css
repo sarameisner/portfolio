@@ -43,10 +43,9 @@ header {
   left: -35px;
   color: black;
 }
-
 /* HEADER SLUT */
 
-/* menu */
+/* MENU STAT */
 .dropbtn {
   background-color: #04aa6d00;
   color: rgb(0, 0, 0);
@@ -178,50 +177,43 @@ header {
 /* FORSIDE SLUT */
 
 /* PROJECTS SIDE START */
-.projectsbillede {
-  position: relative;
-  top: 20px;
-  left: 510px;
-  z-index: 1000;
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 /* bogstav og tal har fået hver deres class så de kunne styles hver især */
 .bogstav {
   font-family: "blenny", sans-serif;
   font-size: x-large;
   font-style: normal;
   color: #748f8c;
+  span {
+    font-family: aileron, sans-serif;
+    font-size: x-large;
+    color: black;
+    text-decoration: underline;
+  }
 }
-.tal {
-  font-family: aileron, sans-serif;
-  font-size: x-large;
-  color: black;
-  text-decoration: underline;
-}
+
 .projectsbillede_container {
-  position: absolute;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: auto 1fr auto;
   gap: 10px;
-  top: 90px;
-  left: 0;
+  width: 30%;
+  margin: 20px auto;
+}
+.projectsbillede {
+  grid-row: 1/4;
+  grid-column: 1/4;
   width: 100%;
-  height: 100%;
 }
 /* links til de forskellige projekter */
 .projects_links {
   display: flex;
   flex-direction: column;
-  z-index: 2000;
-  margin-top: 135px;
-  margin-right: 60px;
   gap: 10px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-left: 16%;
 }
 .projects_links a {
-  display: flex;
-  justify-content: center;
   align-items: baseline;
   text-decoration: none;
   text-align: center;
@@ -329,6 +321,7 @@ header {
   line-height: 1.5;
   margin-bottom: 20px;
   text-align: left;
+  /* margin-left: -20px; */
 }
 h4 {
   font-family: aileron, sans-serif;
@@ -467,9 +460,7 @@ summary {
 summary:hover {
   background: #bbb;
 }
-p {
-  padding: 0 20px;
-}
+
 details[open] summary {
   background: #404040;
   color: #fff;
@@ -564,28 +555,8 @@ details[open] summary {
   .projectsbillede {
     display: none;
   }
-  /* bogstav og tal har fået hver deres class så de kunne styles hver især */
-  .bogstav {
-    font-family: "blenny", sans-serif;
-    font-size: x-large;
-    font-style: normal;
-    color: #748f8c;
-  }
-  .tal {
-    font-family: aileron, sans-serif;
-    font-size: x-large;
-    color: black;
-    text-decoration: underline;
-  }
-
   .projectsbillede_container {
-    text-align: center;
-  }
-  /* links til de forskellige projekter */
-  .projects_links {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
+    display: block;
   }
 
   /* PROJECTS SIDE SLUT */

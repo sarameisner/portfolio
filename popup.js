@@ -4,8 +4,8 @@ var modal = document.getElementById("myModal");
 // henter knappen der åbner pop up vinduet
 var btn = document.getElementById("myBtn");
 
-// henter "<span>" som lukker pop up vinduet
-var span = document.getElementsByClassName("close")[0];
+// henter id'en der hedder close som lukker pop up vinduet
+var span = document.getElementById("close");
 
 // gør at når der klikkes så åbner pop up vinduet
 btn.onclick = function () {
@@ -19,6 +19,7 @@ span.onclick = function () {
 
 // når der bliver klikket uden fra pop up vinduet lukkes det
 window.onclick = function (event) {
+  // to lig med betyder at den spørger om det er den samme, og fordi det er den så siger den display none
   if (event.target == modal) {
     modal.style.display = "none";
   }
