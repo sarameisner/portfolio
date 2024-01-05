@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* BODY */
+
 body {
   background-color: #ebe1d9;
   font-family: aileron, sans-serif;
@@ -12,12 +12,7 @@ body {
   flex-direction: column;
 }
 
-.body_forside {
-  display: grid;
-  grid-template-rows: 95.5px auto 49px;
-}
-
-/* HEADER */
+/* HEADER START */
 header {
   border: 0.5px solid black;
   padding: 10px;
@@ -38,7 +33,8 @@ header {
 .header_content a {
   text-decoration: none;
 }
-/* TITEL I HEADER */
+
+/* titel i header */
 .title {
   font-size: 4rem;
   position: relative;
@@ -47,13 +43,63 @@ header {
   color: black;
 }
 
+/* HEADER SLUT */
+
+/* menu */
+.dropbtn {
+  background-color: #04aa6d00;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e4cda7;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+/* links i menu */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* gør at farven ændrer sig når musen er over */
+.dropdown-content a:hover {
+  background-color: #ebe1d9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e4100;
+}
+/* MENU SLUT */
+
+/* FORSIDE START*/
+.body_forside {
+  display: grid;
+  grid-template-rows: 95.5px auto 49px;
+}
 .forside_main {
   position: relative;
   height: auto;
 }
 
-/* FORSIDE */
-/* PORTRÆT / MALERI */
+/* maleriet af mig */
 .indexbillede {
   max-width: 30%;
   position: absolute;
@@ -62,12 +108,12 @@ header {
   z-index: 1000;
 }
 
-/* FÅR BILLEDET TIL AT BLIVE STØRRE NÅR MUSEN ER OVRE */
+/* billedet bliver større når musen er over */
 .indexbillede:hover {
   transform: scale(1.1);
 }
 
-/* VEKTORGRAFIK BILLEDET */
+/* vektorgrafik billedet */
 .indexbillede2 {
   position: absolute;
   top: 18%;
@@ -75,7 +121,7 @@ header {
   z-index: 1000;
   max-width: 95%;
 }
-/* BILLEDET / MALERIET BAGERST */
+/* maleriet bagerst */
 .indexbillede3 {
   position: absolute;
   top: 0;
@@ -84,7 +130,7 @@ header {
   padding-block: 1%;
 }
 
-/* NAVN INDE I VEKTORGRAFIK */
+/* navn inde i vektorgrafik */
 .overskrift_sara {
   font-family: "blenny", sans-serif;
   font-size: 3.5rem;
@@ -95,7 +141,7 @@ header {
   left: 19%;
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
-/* DETTE FÅR "SARA" TIL AT KOMME IND FRA SIDEN */
+/* får "sara" til at komme ind fra siden når siden loades */
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -126,14 +172,18 @@ header {
   left: 260px;
   z-index: 1;
 }
+.indexoverskrift_mobile {
+  display: none;
+}
+/* FORSIDE SLUT */
 
-/* PROJECTS SIDE */
+/* PROJECTS SIDE START */
 .projectsbillede {
   position: relative;
   top: 20px;
   left: 510px;
 }
-/* BOGSTAV OG TAL HAR FÅET HVER DERES CLASS SÅ DE KUNNE STYLES */
+/* bogstav og tal har fået hver deres class så de kunne styles hver især */
 .bogstav {
   font-family: "blenny", sans-serif;
   font-size: x-large;
@@ -154,13 +204,13 @@ header {
   position: relative;
   text-align: center;
 }
-/* LINKS TIL PROJEKT SIDERNE */
+/* links til de forskellige projekter */
 .projects_links {
   display: flex;
   position: absolute;
   top: 58%;
   left: 53%;
-  transform: translate(-50%, -50%); /* centrere elementerne*/
+  transform: translate(-50%, -50%); /* centrere elementerne */
   justify-content: space-evenly;
   flex-direction: column;
 }
@@ -172,7 +222,7 @@ header {
   text-align: center;
   padding: 40%;
 }
-/* GØR AT LINKS BLIVER STØRRE NÅR MUSEN ER OVER */
+/* gør at linksene bliver større når musen er over */
 .projects_links a:hover {
   transform: scale(1.1);
 }
@@ -181,7 +231,7 @@ header {
   font-size: 2rem;
 }
 
-/* BILLEDE BAG LINKSENE */
+/* billede bag links */
 .projectsbillede {
   display: block;
   max-width: 100%;
@@ -199,52 +249,9 @@ header {
   left: -53px;
   font-weight: lighter;
 }
+/* PROJECTS SIDE SLUT */
 
-/* MENU */
-.dropbtn {
-  background-color: #04aa6d00;
-  color: rgb(0, 0, 0);
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #e4cda7;
-  min-width: 110px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 99;
-}
-/* LINKSENE INDE I MENUEN */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* GØR AT FARVEN ÆNDRER SIG NÅR MUSEN ER OVER */
-.dropdown-content a:hover {
-  background-color: #ebe1d9;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e4100;
-}
-
-/* ---------------------- * GENERAL CSS * ---------------------- */
-/* OVERSKRIFT TIL PROJECT SIDERNE */
+/* STYLING DER GÅR IGEN PÅ DE 5 FORSKELLIGE PROJEKT SIDER START */
 .overskrift {
   display: flex;
   justify-content: center;
@@ -261,14 +268,12 @@ header {
   font-weight: 100;
   font-style: normal;
 }
-
+/* gør at karruselen fylder 2.5fr og tekst og knapper fylder 1fr */
 .N0_samletindhold {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   padding-top: 10px;
 }
-
-/* PLACERING AF KARRUSEL */
 .N0_site {
   position: relative;
 }
@@ -284,12 +289,12 @@ header {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-/* BILLEDER I KARRUSEL */
+/* billeder i karruselen */
 .slides img {
   width: 100%;
   height: auto;
 }
-/* PILENE I KARRUSEL */
+/* pilene i karruselen */
 .prev,
 .next {
   cursor: pointer;
@@ -306,35 +311,25 @@ header {
   user-select: none;
 }
 
-/* TILBAGE KNAP */
+/* tilbage knap */
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
 }
-/* NÆSTE KNAP */
+/* næste knap */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* EFFEKT PÅ KNAPPERNE */
+/* effekt på knapperne */
 .prev:hover,
 .next:hover {
   background-color: #e8d9c5;
 }
 /* KARRUSEL SLUT */
+/* STYLING DER GÅR IGEN PÅ DE 5 FORSKELLIGE PROJEKT SIDER START */
 
-/* FOOTER */
-footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin: 1px;
-  padding: 15px;
-  margin-top: auto;
-}
-/* -------------- PROJECT SIDERNE -------------- */
-/* N01 */
 .tekstindhold01 {
   font-family: aileron, sans-serif;
   margin: 0;
@@ -355,14 +350,14 @@ h4 {
   font-size: medium;
 }
 /* 
-- CONTAINER RUNDT OM TEKST OG KNAP
-- FLEX SÅ KNAPPEN KAN SIDDE UNDER TEKSTEN */
+- container rundt om tekst og knap
+- flex så knappen sidder under */
 .tekstbox_container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* KNAP DER VIDERESENDER  */
+/* knap der videresender til omtalte website   */
 .klikherknap {
   text-align: center;
   font-weight: lighter;
@@ -382,8 +377,8 @@ h4 {
   background-color: #e8d9c5;
   color: black;
 }
-
-/* modalvinduets baggrund */
+/* POP UP VINDUE START */
+/* pop up vinduets baggrund */
 .modal {
   display: none;
   position: fixed;
@@ -407,11 +402,12 @@ h4 {
   line-height: 1.7rem;
   padding-top: 15px;
 }
+/* tilføjer mellemrum under hvert tekst afsnit */
 .modal-content p {
-  margin-bottom: 20px; /* tilføjer mellemrum under hvert tekst afsnit */
+  margin-bottom: 20px;
 }
 
-/* kryds / lukke knappen*/
+/* kryds / lukke knappen */
 .close {
   color: #748f8c;
   float: right;
@@ -425,6 +421,19 @@ h4 {
   text-decoration: none;
   cursor: pointer;
 }
+.modal-content_video {
+  width: fit-content;
+  background-color: #e8d9c5;
+  margin: 15% auto;
+  padding: 20px;
+  border: 5px solid #748f8c;
+  line-height: 1.7rem;
+  padding-top: 15px;
+  justify-content: center;
+  display: flex;
+}
+
+/* knap til pop up vindue */
 #myBtn {
   text-align: center;
   font-weight: lighter;
@@ -446,15 +455,83 @@ h4 {
   background-color: #e8d9c5;
   color: black;
 }
+/* POP UP VINDUE SLUT */
 
-.modal-content_video {
-  width: fit-content;
-  background-color: #e8d9c5;
-  margin: 15% auto;
-  padding: 20px;
-  border: 5px solid #748f8c;
-  line-height: 1.7rem;
-  padding-top: 15px;
-  justify-content: center;
+/* FOOTER START */
+footer {
   display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 1px;
+  padding: 15px;
+  margin-top: auto;
+}
+/* FOOTER SLUT */
+
+/* MOBILESITE */
+@media only screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .title {
+    font-size: 2rem;
+    padding-left: 80px;
+  }
+  .name {
+    font-size: small;
+  }
+
+  .dropbtn {
+    font-size: small;
+  }
+  .header_content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .indexbillede2 {
+    display: none;
+  }
+  .indexbillede3 {
+    width: 70%;
+    top: 0;
+    left: 12%;
+    margin-top: 10%;
+  }
+  .indexbillede {
+    max-width: 70%;
+    top: 0;
+    left: 27%;
+    margin-top: 26%;
+  }
+  .overskrift_meisner {
+    font-size: 1rem;
+  }
+  .overskrift_sara {
+    font-size: 1rem;
+  }
+  .index_overskrift {
+    display: none;
+  }
+  .indexoverskrift_mobile,
+  h1 {
+    display: flex;
+    font-family: "blenny", sans-serif;
+    color: #748f8c;
+    align-items: center;
+    justify-content: center;
+    padding-right: 18px;
+  }
+
+  footer {
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    gap: 5px;
+  }
 }
