@@ -45,13 +45,14 @@ header {
 }
 /* HEADER SLUT */
 
-/* MENU STAT */
+/* MENU START */
 .dropbtn {
   background-color: #04aa6d00;
   color: rgb(0, 0, 0);
   padding: 16px;
   font-size: 16px;
   border: none;
+  cursor: pointer;
 }
 
 .dropdown {
@@ -186,7 +187,7 @@ header {
   color: #748f8c;
   span {
     font-family: aileron, sans-serif;
-    font-size: x-large;
+    font-size: 2.8rem;
     color: black;
     text-decoration: underline;
   }
@@ -219,7 +220,7 @@ header {
   text-align: center;
 }
 .projects_links a p {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 /* gør at linksene bliver større når musen er over */
@@ -316,12 +317,11 @@ header {
 
 .tekstindhold01 p {
   font-weight: lighter;
-  text-transform: uppercase;
   width: 80%;
   line-height: 1.5;
   margin-bottom: 20px;
   text-align: left;
-  /* margin-left: -20px; */
+  font-size: 1.1rem;
 }
 h4 {
   font-family: aileron, sans-serif;
@@ -339,7 +339,7 @@ h4 {
 /* knap der videresender til omtalte website   */
 .klikherknap {
   text-align: center;
-  font-weight: lighter;
+
   background-color: #e4cda7;
   color: #748f8c;
   border: 1px #748f8c;
@@ -415,7 +415,6 @@ h4 {
 /* knap til pop up vindue */
 #myBtn {
   text-align: center;
-  font-weight: lighter;
   background-color: #e4cda7;
   color: #748f8c;
   border: 1px #748f8c;
@@ -446,29 +445,135 @@ footer {
   margin-top: auto;
 }
 /* FOOTER SLUT */
-
+/* ABOUT ME */
+/* harmonika */
 details {
-  font-family: arial;
+  font-family: aileron, sans-serif;
 }
 summary {
-  background: #dedede;
+  background: #e8d9c5;
   padding: 20px;
-  border-bottom: solid 1px #bbb;
+  border-bottom: solid 1px #ebe1d9;
   transition: background 1s;
   cursor: pointer;
 }
 summary:hover {
-  background: #bbb;
+  background: #ebe1d9;
 }
 
 details[open] summary {
-  background: #404040;
-  color: #fff;
+  background: #ebe1d9;
+  color: black;
+}
+
+.aboutme_main {
+  display: flex;
+}
+
+.tilbageknap {
+  width: 50%;
+  position: fixed;
+  top: 120px;
+  left: 20px;
+  z-index: 999; /* Sørg for, at knappen vises foran andre elementer */
+  cursor: pointer;
+  color: #748f8c;
+  font-size: 0.8rem;
+}
+.tilbageknap_img:hover {
+  opacity: 0.5;
+}
+
+.tilbageknap_img {
+  width: 5%;
 }
 /* TABLET SITE */
 /* når skærmen er max 1000px - dvs den er under 1000 */
 @media (max-width: 1000px) {
+  /* HEADER START */
+  .title {
+    font-size: 2.5rem;
+  }
+  .name {
+    font-size: small;
+  }
+  .dropbtn {
+    font-size: small;
+  }
+  /* HEADER SLUT */
+
+  /* FORSIDE START */
+  .indexbillede {
+    max-width: 50%;
+    top: 22%;
+  }
+  .indexbillede2 {
+    display: none;
+  }
+  .indexbillede3 {
+    top: 10%;
+    left: 25%;
+  }
+  .index_overskrift {
+    display: none;
+  }
+  .indexoverskrift_mobile,
+  h1 {
+    display: flex;
+    font-family: "blenny", sans-serif;
+    color: #748f8c;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    padding-right: 18px;
+  }
+  /* FORSIDE SLUT */
+
+  /* PROJECT SIDE START */
   .projectsbillede {
+    display: none;
+  }
+  .projects_links {
+    margin-top: 7%;
+    gap: 7%;
+  }
+  /* PROJECT SIDE SLUT */
+
+  /* DE FORSKELLIGE PROJEKTER START */
+  .N0_samletindhold {
+    display: flex;
+    flex-direction: column-reverse; /* ændrer rækkefølgen */
+  }
+
+  .N0_slides {
+    order: 2; /* flytter slideshowet under teksten */
+  }
+
+  .tekstbox_container {
+    order: 1; /* flytter teksten over slideshowet */
+  }
+  .tekstindhold01 {
+    padding-left: 13%;
+    margin-top: 3%;
+  }
+  .klikherknap {
+    margin-top: 1%;
+    margin-left: 12%;
+  }
+  #myBtn {
+    margin-top: 2%;
+    margin-left: 12%;
+  }
+  .tilbageknap_img {
+    width: 10%;
+  }
+  /* DE FORSKELLIGE PROJEKTER SLUT */
+
+  footer {
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    gap: 5px;
   }
 }
 
@@ -498,6 +603,13 @@ details[open] summary {
     align-items: center;
     display: flex;
   }
+  .dropdown-content a {
+    color: black;
+    padding: 4px 2px;
+    text-decoration: none;
+    display: block;
+    font-size: small;
+  }
   /* HEADER SLUT */
 
   /* FORSIDE START */
@@ -516,12 +628,7 @@ details[open] summary {
     left: 27%;
     margin-top: 26%;
   }
-  .overskrift_meisner {
-    font-size: 1rem;
-  }
-  .overskrift_sara {
-    font-size: 1rem;
-  }
+
   .index_overskrift {
     display: none;
   }
@@ -533,24 +640,10 @@ details[open] summary {
     align-items: center;
     justify-content: center;
     padding-right: 18px;
+    font-size: 2rem;
   }
+  /* FORSIDE SLUT */
 
-  footer {
-    display: flex;
-    font-size: 0.9rem;
-    justify-content: center;
-    gap: 5px;
-  }
-
-  /* MENU */
-  .dropdown-content a {
-    color: black;
-    padding: 4px 2px;
-
-    text-decoration: none;
-    display: block;
-    font-size: small;
-  }
   /* PROJECTS SIDE START */
   .projectsbillede {
     display: none;
@@ -558,9 +651,9 @@ details[open] summary {
   .projectsbillede_container {
     display: block;
   }
-
   /* PROJECTS SIDE SLUT */
 
+  /* DE FORSKELLIGE PROJEKTER START */
   .N0_samletindhold {
     display: flex;
     flex-direction: column-reverse; /* ændrer rækkefølgen */
@@ -572,5 +665,25 @@ details[open] summary {
 
   .tekstbox_container {
     order: 1; /* flytter teksten over slideshowet */
+  }
+  .tekstindhold01 {
+    padding-left: 13%;
+  }
+  .bogstav {
+    font-size: large;
+    span {
+      font-size: 1.8rem;
+    }
+  }
+  .overskrift p {
+    font-size: 1.5rem;
+  }
+  /* DE FORSKELLIGE PROJEKTER SLUT */
+
+  footer {
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    gap: 5px;
   }
 }
