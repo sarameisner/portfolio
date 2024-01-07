@@ -178,7 +178,6 @@ header {
 /* FORSIDE SLUT */
 
 /* PROJECTS SIDE START */
-
 /* bogstav og tal har fået hver deres class så de kunne styles hver især */
 .bogstav {
   font-family: "blenny", sans-serif;
@@ -227,7 +226,6 @@ header {
 .projects_links a:hover {
   transform: scale(1.1);
 }
-
 /* PROJECTS SIDE SLUT */
 
 /* STYLING DER GÅR IGEN PÅ DE 5 FORSKELLIGE PROJEKT SIDER START */
@@ -307,7 +305,6 @@ header {
   background-color: #e8d9c5;
 }
 /* KARRUSEL SLUT */
-/* STYLING DER GÅR IGEN PÅ DE 5 FORSKELLIGE PROJEKT SIDER START */
 
 .tekstindhold01 {
   font-family: aileron, sans-serif;
@@ -433,7 +430,16 @@ h4 {
   background-color: #e8d9c5;
   color: black;
 }
+
+.tilbageknap_img {
+  width: 3%;
+  position: fixed;
+  top: 120px;
+  left: 20px;
+  z-index: 999;
+}
 /* POP UP VINDUE SLUT */
+/* STYLING DER GÅR IGEN PÅ DE 5 FORSKELLIGE PROJEKT SIDER SLUT */
 
 /* FOOTER START */
 footer {
@@ -445,6 +451,7 @@ footer {
   margin-top: auto;
 }
 /* FOOTER SLUT */
+
 /* ABOUT ME */
 /* harmonika */
 details {
@@ -469,25 +476,14 @@ details[open] summary {
 .aboutme_main {
   display: flex;
 }
+.img {
+  align-self: stretch;
+  object-fit: cover;
+  width: 100%;
+}
+/* ABOUT ME SLUT */
 
-.tilbageknap {
-  width: 50%;
-  position: fixed;
-  top: 120px;
-  left: 20px;
-  z-index: 999; /* Sørg for, at knappen vises foran andre elementer */
-  cursor: pointer;
-  color: #748f8c;
-  font-size: 0.8rem;
-}
-.tilbageknap_img:hover {
-  opacity: 0.5;
-}
-
-.tilbageknap_img {
-  width: 5%;
-}
-/* TABLET SITE */
+/* --------------------------------- TABLET --------------------------------- */
 /* når skærmen er max 1000px - dvs den er under 1000 */
 @media (max-width: 1000px) {
   /* HEADER START */
@@ -577,7 +573,7 @@ details[open] summary {
   }
 }
 
-/* MOBILESITE */
+/* --------------------------------- MOBILESITE --------------------------------- */
 @media only screen and (max-width: 800px) {
   * {
     margin: 0;
@@ -687,3 +683,4 @@ details[open] summary {
     gap: 5px;
   }
 }
+/* --------------------------------- MOBILESITE --------------------------------- */

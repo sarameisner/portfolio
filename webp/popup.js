@@ -19,6 +19,7 @@ span.onclick = function () {
 
 // når der bliver klikket uden fra pop up vinduet lukkes det
 window.onclick = function (event) {
+  // to lig med betyder at den spørger om det er den samme, og fordi det er den så siger den display none
   if (event.target == modal) {
     modal.style.display = "none";
   }
