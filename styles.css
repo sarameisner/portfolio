@@ -454,20 +454,77 @@ footer {
 /* FOOTER SLUT */
 
 /* ABOUT ME */
+
+.aboutme_overskrift {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h1 {
+  font-family: "blenny", sans-serif;
+  color: #748f8c;
+  font-size: 3rem;
+}
+
+.span_abotme {
+  font-family: aileron, sans-serif;
+  font-size: 3rem;
+  margin-top: 16px;
+  font-weight: 250;
+  color: black;
+}
+
+.mig {
+  width: 100%;
+}
+.ommig1 {
+  width: 40%;
+  margin-top: 3%;
+}
+.frida {
+  font-family: aileron, sans-serif;
+  font-weight: 250;
+  font-style: italic;
+  font-size: x-small;
+  text-transform: uppercase;
+  color: #748f8c;
+  margin-left: 6%;
+}
+.kreditering_frida {
+  margin-left: 39%;
+}
 /* harmonika */
+.harmonika {
+  padding: 12px;
+  margin-left: 30%;
+}
 details {
   font-family: aileron, sans-serif;
   margin-left: 13%;
   margin-top: 2%;
+  width: fit-content;
 }
 summary {
   background: #e8d9c5;
-  padding: 20px;
+  padding: 8px 12px;
   border-bottom: solid 1px #ebe1d9;
-  /* baggrundsfarven ændres når musen er over */
   transition: background 1s;
   cursor: pointer;
-  border-radius: 10%;
+  border-radius: 4px;
 }
 summary:hover {
   background: #ebe1d9;
@@ -478,25 +535,11 @@ details[open] summary {
   color: black;
 }
 
-.harmonikaogbillede {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ommig1 {
-  width: 29%;
-}
 .gonzo {
   width: 50%;
 }
 .thehummusbar {
   width: 40%;
-}
-.aboutme_overskrift {
-  margin: 10%;
-}
-.mig {
-  width: 100%;
 }
 /* ABOUT ME SLUT */
 
@@ -584,6 +627,21 @@ details[open] summary {
     left: 2%;
   }
   /* DE FORSKELLIGE PROJEKTER SLUT */
+  /* ABOUT ME START */
+  .span_abotme {
+    margin-top: 2px;
+  }
+  .ommig1 {
+    width: 60%;
+    margin-left: -11%;
+    margin-top: 5%;
+  }
+  .frida {
+    margin-left: -5%;
+  }
+  .harmonika {
+    margin-left: 19%;
+  }
 
   footer {
     display: flex;
