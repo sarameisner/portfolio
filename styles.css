@@ -208,10 +208,11 @@ header {
 .projects_links {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2px;
   grid-column: 2/3;
   grid-row: 2/3;
   padding-left: 16%;
+  margin-top: 7%;
 }
 .projects_links a {
   align-items: baseline;
@@ -221,11 +222,11 @@ header {
 .projects_links a p {
   font-size: 3rem;
 }
-
 /* gør at linksene bliver større når musen er over */
 .projects_links a:hover {
   transform: scale(1.1);
 }
+
 /* PROJECTS SIDE SLUT */
 
 /* STYLING DER GÅR IGEN PÅ DE 5 FORSKELLIGE PROJEKT SIDER START */
@@ -456,13 +457,17 @@ footer {
 /* harmonika */
 details {
   font-family: aileron, sans-serif;
+  margin-left: 13%;
+  margin-top: 2%;
 }
 summary {
   background: #e8d9c5;
   padding: 20px;
   border-bottom: solid 1px #ebe1d9;
+  /* baggrundsfarven ændres når musen er over */
   transition: background 1s;
   cursor: pointer;
+  border-radius: 10%;
 }
 summary:hover {
   background: #ebe1d9;
@@ -473,12 +478,24 @@ details[open] summary {
   color: black;
 }
 
-.aboutme_main {
+.harmonikaogbillede {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.img {
-  align-self: stretch;
-  object-fit: cover;
+.ommig1 {
+  width: 29%;
+}
+.gonzo {
+  width: 50%;
+}
+.thehummusbar {
+  width: 40%;
+}
+.aboutme_overskrift {
+  margin: 10%;
+}
+.mig {
   width: 100%;
 }
 /* ABOUT ME SLUT */
@@ -561,7 +578,10 @@ details[open] summary {
     margin-left: 12%;
   }
   .tilbageknap_img {
-    width: 10%;
+    width: 5%;
+    position: fixed;
+    top: 9%;
+    left: 2%;
   }
   /* DE FORSKELLIGE PROJEKTER SLUT */
 
