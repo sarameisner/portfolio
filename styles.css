@@ -226,6 +226,10 @@ header {
 .projects_links a:hover {
   transform: scale(1.1);
 }
+/* her taler vi til de to sidste links for at få dem på linje med de tre øverste */
+.projects_links a:nth-last-child(-n + 2) {
+  margin-left: 7%;
+}
 
 /* PROJECTS SIDE SLUT */
 
@@ -541,6 +545,42 @@ details[open] summary {
 .thehummusbar {
   width: 40%;
 }
+/* harmonika slut */
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kontakt a {
+  padding: 8px; /* Juster størrelsen og afstanden mellem linkene */
+  text-align: center;
+  width: fit-content;
+}
+
+.mail {
+  font-size: 12px;
+  font-family: aileron, sans-serif;
+  color: black;
+  font-weight: 300;
+}
+
+.insta {
+  font-size: 16px;
+  font-family: aileron, sans-serif;
+  color: #748f8c;
+  font-weight: 200;
+}
+
+.linkedin {
+  font-size: 20px;
+  font-family: aileron, sans-serif;
+  color: black;
+  font-weight: 100;
+}
+.aboutme_body {
+  background-image: linear-gradient(#ebe1d9, #e4cda7);
+}
 /* ABOUT ME SLUT */
 
 /* --------------------------------- TABLET --------------------------------- */
@@ -754,6 +794,20 @@ details[open] summary {
   }
   /* DE FORSKELLIGE PROJEKTER SLUT */
 
+  /* ABOUT ME */
+  .harmonika {
+    margin-left: 1%;
+  }
+  .frida {
+    margin-left: -23%;
+  }
+  .tilbageknap_img {
+    margin-top: 4%;
+  }
+  .projects_links a p {
+    font-size: 2rem;
+    padding-bottom: 35px;
+  }
   footer {
     display: flex;
     font-size: 0.9rem;
