@@ -556,6 +556,7 @@ details[open] summary {
   padding: 8px; /* Juster størrelsen og afstanden mellem linkene */
   text-align: center;
   width: fit-content;
+  margin-right: -2%;
 }
 
 .mail {
