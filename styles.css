@@ -582,6 +582,13 @@ details[open] summary {
 .aboutme_body {
   background-image: linear-gradient(#ebe1d9, #e4cda7);
 }
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.skills {
+  place-self: center;
+}
 /* ABOUT ME SLUT */
 
 /* --------------------------------- TABLET --------------------------------- */
