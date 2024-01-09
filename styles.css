@@ -267,7 +267,7 @@ img.indexbillede3 {
 
 /* KARRUSEL START */
 .slideshow-container {
-  width: 75%;
+  width: 80%;
   position: relative;
   overflow: hidden;
   margin: auto;
@@ -324,7 +324,7 @@ img.indexbillede3 {
 
 .tekstindhold01 p {
   font-weight: lighter;
-  width: 80%;
+  width: 95%;
   line-height: 1.5;
   margin-bottom: 20px;
   text-align: left;
@@ -606,7 +606,8 @@ details[open] summary {
   place-self: center;
   font-family: aileron, sans-serif;
   line-height: 1.5;
-  width: 80%;
+  width: 75%;
+  text-align: left;
 }
 .skills p {
   padding-bottom: 20px; /* Tilføj ønsket mellemrum under alle <p> elementer i .skills */
