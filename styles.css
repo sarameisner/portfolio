@@ -1,9 +1,9 @@
+/* DESKTOP */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: #ebe1d9;
   font-family: aileron, sans-serif;
@@ -11,7 +11,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 main {
   max-width: 1280px;
   margin: 0 auto;
@@ -27,7 +26,7 @@ header {
   text-decoration: none;
   max-width: 100dvw;
 }
-
+/* placering af indhold inde i header */
 .header_content {
   display: flex;
   justify-content: space-between;
@@ -36,10 +35,10 @@ header {
   margin-right: 40px;
   margin-left: 40px;
 }
+/* fjerner stregen under linksene i headeren */
 .header_content a {
   text-decoration: none;
 }
-
 /* titel i header */
 .title {
   font-size: 4rem;
@@ -59,11 +58,12 @@ header {
   border: none;
   cursor: pointer;
 }
-
+/* placering af menu */
 .dropdown {
   position: relative;
   display: inline-block;
 }
+/* menu boksen */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -79,16 +79,14 @@ header {
   text-decoration: none;
   display: block;
 }
-
 /* gør at farven ændrer sig når musen er over */
 .dropdown-content a:hover {
   background-color: #ebe1d9;
 }
-
+/* gør at menuen vises når musen holdes over */
 .dropdown:hover.dropdown-content {
   display: block;
 }
-
 .dropdown:hover .dropbtn {
   background-color: #3e8e4100;
 }
@@ -124,12 +122,10 @@ img.indexbillede3 {
   grid-column: 1/4;
   grid-row: 2/5;
 }
-
 /* billedet bliver større når musen er over */
 .indexbillede:hover {
   transform: scale(1.1);
 }
-
 .index_overskrift {
   grid-column: 2/3;
   grid-row: 3/4;
@@ -159,7 +155,6 @@ img.indexbillede3 {
     opacity: 1;
   }
 }
-
 .overskrift_meisner {
   font-family: aileron, sans-serif;
   font-size: 3.5rem;
@@ -235,7 +230,6 @@ img.indexbillede3 {
 .projects_links a:hover {
   transform: scale(1.1);
 }
-
 /* PROJECTS SIDE SLUT */
 
 /* STYLING DER GÅR IGEN PÅ DE 5 FORSKELLIGE PROJEKT SIDER START */
@@ -245,11 +239,9 @@ img.indexbillede3 {
   align-items: baseline;
   gap: 10px;
 }
-
 .overskrift p {
   font-size: 2rem;
 }
-
 .p1 {
   font-family: aileron, sans-serif;
   font-weight: 100;
@@ -264,8 +256,7 @@ img.indexbillede3 {
 .N0_site {
   position: relative;
 }
-
-/* KARRUSEL START */
+/* karrusel start*/
 .slideshow-container {
   width: 80%;
   position: relative;
@@ -297,7 +288,6 @@ img.indexbillede3 {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 /* tilbage knap */
 .prev {
   left: 0;
@@ -308,20 +298,17 @@ img.indexbillede3 {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* effekt på knapperne */
 .prev:hover,
 .next:hover {
   background-color: #e8d9c5;
 }
-/* KARRUSEL SLUT */
-
+/* karussel slut */
 .tekstindhold01 {
   font-family: aileron, sans-serif;
   margin: 0;
   padding-top: 5px;
 }
-
 .tekstindhold01 p {
   font-weight: lighter;
   width: 95%;
@@ -343,10 +330,9 @@ h4 {
   flex-direction: column;
   align-items: center;
 }
-/* knap der videresender til omtalte website   */
+/* knap der videresender til omtalte website */
 .klikherknap {
   text-align: center;
-
   background-color: #e4cda7;
   color: #748f8c;
   border: 1px #748f8c;
@@ -358,12 +344,11 @@ h4 {
   margin-top: 20px;
   margin-right: 80px;
 }
-
 .klikherknap:hover {
   background-color: #e8d9c5;
   color: black;
 }
-/* POP UP VINDUE START */
+/* pop up vindue start */
 /* pop up vinduets baggrund */
 .modal {
   display: none;
@@ -377,7 +362,6 @@ h4 {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
-
 /* pop up indhold */
 .modal-content {
   background-color: #e8d9c5;
@@ -392,21 +376,7 @@ h4 {
 .modal-content p {
   margin-bottom: 20px;
 }
-
-/* kryds / lukke knappen */
-.close {
-  color: #748f8c;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
+/* de to pop up vinduer med video*/
 .modal-content_video {
   width: fit-content;
   background-color: #e8d9c5;
@@ -418,7 +388,19 @@ h4 {
   justify-content: center;
   display: flex;
 }
-
+/* kryds / lukke knappen */
+.close {
+  color: #748f8c;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 /* knap til pop up vindue */
 #myBtn {
   text-align: center;
@@ -435,12 +417,10 @@ h4 {
   font-size: 1rem;
   cursor: pointer;
 }
-
 #myBtn:hover {
   background-color: #e8d9c5;
   color: black;
 }
-
 .tilbageknap_img {
   width: 3%;
   position: fixed;
@@ -448,7 +428,8 @@ h4 {
   left: 20px;
   z-index: 999;
 }
-/* POP UP VINDUE SLUT */
+/* pop up vindue slut */
+
 /* STYLING DER GÅR IGEN PÅ DE 5 FORSKELLIGE PROJEKT SIDER SLUT */
 
 /* FOOTER START */
@@ -463,7 +444,10 @@ footer {
 /* FOOTER SLUT */
 
 /* ABOUT ME */
-
+.aboutme_body {
+  background-image: linear-gradient(#ebe1d9, #e4cda7);
+}
+/* overskrift på about me start */
 .aboutme_overskrift {
   margin: 0;
   display: flex;
@@ -488,7 +472,6 @@ h1 {
   color: #748f8c;
   font-size: 3rem;
 }
-
 .span_abotme {
   font-family: aileron, sans-serif;
   font-size: 3rem;
@@ -496,12 +479,15 @@ h1 {
   font-weight: 250;
   color: black;
 }
+/* overskrift på about me slut */
 
+/* billederne af mig */
 .mig {
   width: 100%;
 }
+/* maleri og krediterings del start */
 .ommig1 {
-  width: 80%;
+  width: 90%;
   margin-top: 3%;
 }
 .frida {
@@ -516,7 +502,9 @@ h1 {
 .kreditering_frida {
   margin-left: 39%;
 }
-/* harmonika */
+/* maleri og krediterings del slut*/
+
+/* harmonika start */
 .harmonika {
   padding: 12px;
   margin-left: 28%;
@@ -527,6 +515,7 @@ details {
   margin-top: 2%;
   width: fit-content;
 }
+/* titlen på harmonikaen */
 summary {
   background: #e8d9c5;
   padding: 8px 12px;
@@ -539,11 +528,12 @@ summary:hover {
   background: #ebe1d9;
 }
 
+/* baggrunds farve og farve på tekst når harmonikaen er åben */
 details[open] summary {
   background: #ebe1d9;
   color: black;
 }
-
+/* billeder i harmonikaen */
 .gonzo {
   width: 50%;
 }
@@ -551,19 +541,19 @@ details[open] summary {
   width: 50%;
 }
 /* harmonika slut */
+
+/* kontakt start */
 .kontakt {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .kontakt a {
-  padding: 8px; /* Juster størrelsen og afstanden mellem linkene */
+  padding: 8px;
   text-align: center;
   width: fit-content;
   margin-right: -2%;
 }
-
 .mail {
   font-size: 12px;
   font-family: aileron, sans-serif;
@@ -573,18 +563,15 @@ details[open] summary {
 .mail:hover {
   opacity: 0.4;
 }
-
 .insta {
   font-size: 16px;
   font-family: aileron, sans-serif;
   color: #748f8c;
   font-weight: 200;
 }
-
 .insta:hover {
   opacity: 0.4;
 }
-
 .linkedin {
   font-size: 20px;
   font-family: aileron, sans-serif;
@@ -594,23 +581,25 @@ details[open] summary {
 .linkedin:hover {
   opacity: 0.4;
 }
-.aboutme_body {
-  background-image: linear-gradient(#ebe1d9, #e4cda7);
-}
+/* kontakt slut */
+
+/* div rundt om original maleriet og teksten om mine færdigheder, så de sidder ved siden af hinanden */
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 5%;
 }
 .skills {
+  /* gør at min tekst sidder i midten */
   place-self: center;
   font-family: aileron, sans-serif;
   line-height: 1.5;
-  width: 75%;
+  width: 76%;
   text-align: left;
 }
 .skills p {
-  padding-bottom: 20px; /* Tilføj ønsket mellemrum under alle <p> elementer i .skills */
+  /* laver mellemrum mellem de to p tags */
+  padding-bottom: 15px;
 }
 /* ABOUT ME SLUT */
 
@@ -633,7 +622,6 @@ details[open] summary {
   .overskrift_sara {
     font-size: 2.5rem;
   }
-
   .overskrift_meisner {
     font-size: 2.5rem;
   }
@@ -652,17 +640,18 @@ details[open] summary {
   /* PROJECT SIDE SLUT */
 
   /* DE FORSKELLIGE PROJEKTER START */
+  /* ændrer rækkefølgen */
   .N0_samletindhold {
     display: flex;
-    flex-direction: column-reverse; /* ændrer rækkefølgen */
+    flex-direction: column-reverse;
   }
-
+  /* flytter slideshowet under teksten */
   .N0_slides {
-    order: 2; /* flytter slideshowet under teksten */
+    order: 2;
   }
-
+  /* flytter teksten over slideshowet */
   .tekstbox_container {
-    order: 1; /* flytter teksten over slideshowet */
+    order: 1;
   }
   .tekstindhold01 {
     padding-left: 13%;
@@ -688,8 +677,8 @@ details[open] summary {
     margin-top: 2px;
   }
   .ommig1 {
-    width: 60%;
-    margin-left: -11%;
+    width: 120%;
+    margin-left: -28%;
     margin-top: 5%;
   }
   .frida {
@@ -698,13 +687,13 @@ details[open] summary {
   .harmonika {
     margin-left: 19%;
   }
-
   footer {
     display: flex;
     font-size: 0.9rem;
     justify-content: center;
     gap: 5px;
   }
+  /* ABOUT ME SLUT */
 }
 
 /* --------------------------------- MOBILESITE --------------------------------- */
@@ -746,7 +735,6 @@ details[open] summary {
   .overskrift_sara {
     font-size: 1.5rem;
   }
-
   .overskrift_meisner {
     font-size: 1.5rem;
   }
@@ -762,17 +750,18 @@ details[open] summary {
   /* PROJECTS SIDE SLUT */
 
   /* DE FORSKELLIGE PROJEKTER START */
+  /* ændrer rækkefølgen */
   .N0_samletindhold {
     display: flex;
-    flex-direction: column-reverse; /* ændrer rækkefølgen */
+    flex-direction: column-reverse;
   }
-
+  /* flytter slideshowet under teksten */
   .N0_slides {
-    order: 2; /* flytter slideshowet under teksten */
+    order: 2;
   }
-
+  /* flytter teksten over slideshowet */
   .tekstbox_container {
-    order: 1; /* flytter teksten over slideshowet */
+    order: 1;
   }
   .tekstindhold01 {
     padding-left: 13%;
@@ -811,4 +800,3 @@ details[open] summary {
   }
   /* ABOUT ME SLUT */
 }
-/* --------------------------------- MOBILESITE --------------------------------- */
